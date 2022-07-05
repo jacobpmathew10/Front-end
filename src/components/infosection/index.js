@@ -1,6 +1,6 @@
 import React from 'react'
 import { Column2, ImgWrap ,Column1,InfoContainer,InfoRow,TopLine,Subtitle,Heading,BtnWrap,Img,TextWrapper,InfoWrapper} from './infoElement'
-import { Button } from '../ButtonElement'
+/* import { Button } from '../ButtonElement' */
 const InfoSection = ({lightBg,id,imgStart,topline,lightText,headline,img,description,buttonlabel,darkText,alt,primary,dark,dark2}) => {
   return (
    <>
@@ -12,9 +12,9 @@ const InfoSection = ({lightBg,id,imgStart,topline,lightText,headline,img,descrip
                     <TopLine>{topline}</TopLine>
                     <Heading lightText={lightText}>{headline}</Heading>
                     <Subtitle darkText={darkText}>{description}</Subtitle>
-                    <BtnWrap>
+                    {/* <BtnWrap>
                         <Button to='home' smooth={true} duration={500} spy={true} exact="true" offset={-80} primary={primary ? 1 : 0} dark={ dark ? 1 : 0 } dark2={dark2 ? 1 : 0}>{buttonlabel}</Button>
-                    </BtnWrap>
+                    </BtnWrap> */}
                 </TextWrapper>
                 </Column1>    
             <Column2>

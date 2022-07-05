@@ -1,10 +1,15 @@
 import React from 'react';
+import { SigninContainer } from '../components/Signinelement';
 
 const SigninPage = () => {
   return (
-    <div>
-        <h1>SigninPage</h1>
-        </div>
+    <>
+        <SigninContainer>
+         {/*  <SignFileds>
+            
+          </SignFileds> */}
+        </SigninContainer>
+        </>
   )
 };
 

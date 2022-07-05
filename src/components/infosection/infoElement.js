@@ -42,7 +42,7 @@ padding:0 15px;
 grid-area:col2;
 `
 export const  TextWrapper=styled.div`
-max-width:540px;
+max-width:600px;
 padding-top:0;
 padding-bottom:60px;
 `
@@ -70,7 +70,7 @@ color:${({lightText})=>(lightText ?'#f7f8fa':'#010606')};
 export const Subtitle=styled.p`
 max-width:440px;
 margin-bottom:35px;
-font-size:18px;
+font-size:20px;
 line-height:24px;
 color:${({darkText})=>(darkText ?'#010606': '#fff')};
 `

@@ -8,7 +8,7 @@ const Navbar = ({toggle}) => {
        <Nav>
         <NavbarContainer>
             <NavLogo to="/">
-                Sales prediction
+               fore C sales
             </NavLogo>
             <MobileIcon onClick={toggle}>
                 <FaBars/>
@@ -20,9 +20,6 @@ const Navbar = ({toggle}) => {
                 <Navitem>
                     <Navlinks to='discover'>Discover</Navlinks>
 
-                </Navitem>
-                <Navitem>
-                    <Navlinks to='Services'>Services</Navlinks>
                 </Navitem>
                 <Navitem>
                     <Navlinks to='Signup'>Sign Up</Navlinks>

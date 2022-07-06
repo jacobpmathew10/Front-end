@@ -31,14 +31,14 @@ export const homeObjtwo={
     primary:true,
     darkText:false
 };
-export const homeObjthree={
+/* export const signupdata={
     id:'Signup',
     lightBg:true,
     lightText:false,
     lightTextDesc:false,
-    topline:"Sign Up",
-    headline:'Create an Account now!!!',
-    description:'Improve your sales better!!',
+    topline:"JOIN OUT TEAM",
+    headline:'Create an account is extremely easy',
+    description:'Get everything set up and ready in under 10 minutes.All you need to do is add your information and your ready to go',
     buttonlabel:'Get Started',
     imgStart:false,
     img:require('../../images/image4.svg'),
@@ -46,4 +46,4 @@ export const homeObjthree={
     dark:false,
     primary:false,
     darkText:true
-};
+}; */

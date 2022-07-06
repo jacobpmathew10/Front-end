@@ -3,7 +3,10 @@ import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/Herosection';
 import InfoSection from '../components/infosection';
-import { homeObjone,homeObjtwo,homeObjthree } from '../components/infosection/Data';
+import { homeObjone,homeObjtwo/* homeObjthree,  */} from '../components/infosection/Data';
+import{signupdata } from'../components/Signup/data';
+import Signup from '../components/Signup';
+import Footer from '../components/Footer';
 const Home = () => {
     const [isOpen,setIsOpen]=useState(false);
     const toggle = () =>
@@ -17,7 +20,8 @@ const Home = () => {
     <HeroSection/>
     <InfoSection {...homeObjone}/>
     <InfoSection {...homeObjtwo}/>
-    <InfoSection {...homeObjthree}/>
+    <Signup {...signupdata}/>
+    <Footer/>
     </>
   )
 };

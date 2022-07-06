@@ -28,7 +28,7 @@ const Navbar = ({toggle}) => {
        <Nav scrollNav={scrollNav}>
         <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
-               fore C sales
+              Digi Forecast
             </NavLogo>
             <MobileIcon onClick={toggle}>
                 <FaBars/>

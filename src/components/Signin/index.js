@@ -1,11 +1,11 @@
 import React from 'react'
 import { FormButton, FormInput, FormLabel,FormH1,FormContent,Container,FormWrap,Icon,Form,Text } from './SiginElements'
-
+import './signin.css'
 const SignIn = () => {
   return( <>
   <Container>
     <FormWrap>
-        <Icon to="/">fore C sales</Icon>
+        <a href="/" className='navlink'>Digi Forecast</a>
         <FormContent>
             <Form action='#'>
                 <FormH1>Sign in to your account</FormH1>

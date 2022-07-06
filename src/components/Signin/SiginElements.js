@@ -10,7 +10,7 @@ right:0;
 top:0;
 z-index:0;
 overflow:hidden;
-background:linear-gradient(180deg,rgba(1,147,86,1)0%,rgba(10,201,122,1)100%);
+background:linear-gradient(180deg,rgba(1,147,86,1)0%,rgb(24, 180, 79)100%);
 `
 
 export const FormWrap=styled.div`
@@ -23,20 +23,6 @@ justify-content:center;
     height:80%;
 }
 `
-export const Icon=styled(Link)`
-margin-left:32px;
-margin-top:32px;
-text-decoration:none;
-color:#fff;
-font-weight:700;
-font-size:32px;
-
-@media screen and (max-width:480px){
-    margin-left:16px;
-    margin-top:8px;
-}
-`
-
 export const FormContent=styled.div`
 height:100%;
 display:flex;

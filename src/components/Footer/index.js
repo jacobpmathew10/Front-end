@@ -9,9 +9,9 @@ const Footer = () => {
             <SocialMedia>
                 <SocialMediaWrap>
                     <SocialLogo to='/'>
-                        fore C sales
+                       Digi Forecast
                     </SocialLogo>
-                    <WebsiteRights>fore c sales <FaCopyright></FaCopyright> {new Date().getFullYear()} All Rights Reserved. </WebsiteRights>
+                    <WebsiteRights>Digi Forecast <FaCopyright></FaCopyright> {new Date().getFullYear()} All Rights Reserved. </WebsiteRights>
                     <SocialIcons>
                         <SocialIconLink href="//www.facebook.com" target="_blank" aria-label="Facebook"><FaFacebook/></SocialIconLink>
                         <SocialIconLink href="//Instagram.com" target="_blank" aria-label="Instagram"><FaInstagram/></SocialIconLink>

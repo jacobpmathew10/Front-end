@@ -21,9 +21,9 @@ const useForm = (callback, validate) => {
   const handleSubmit =(e)  => {
     e.preventDefault();
     db.collection('Users').add({
-        Username:values,
-        email:values,
-        password:values
+        Username:values.username,
+        email:values.email,
+        password:values.password
 
     })
     setErrors(validate(values));

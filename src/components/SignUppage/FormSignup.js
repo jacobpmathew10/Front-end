@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState  } from 'react';
 import validate from './validateInfo';
 import useForm from './useForm';
 import './Form.css';
@@ -7,6 +7,8 @@ const FormSignup = ({ submitForm }) => {
     submitForm,
     validate
   );
+  const [email,setEmail]=useState('');
+const [Password,setPassword]=useState('');
 
   return (
     <div className='form-content-right'>
@@ -34,8 +36,8 @@ const FormSignup = ({ submitForm }) => {
             type='email'
             name='email'
             placeholder='Enter your email'
-            value={values.email}
-            onChange={handleChange}
+            value={email}
+            onChange={(e)=>{setEmail(e.target.value)}}
           />
           {errors.email && <p>{errors.email}</p>}
         </div>
@@ -46,12 +48,12 @@ const FormSignup = ({ submitForm }) => {
             type='password'
             name='password'
             placeholder='Enter your password'
-            value={values.password}
-            onChange={handleChange}
+            value={Password} 
+            onChange={(e)=>{setPassword(e.target.value)}}
           />
           {errors.password && <p>{errors.password}</p>}
         </div>
-        <div className='form-inputs'>
+      {/*   <div className='form-inputs'>
           <label className='form-label'>Confirm Password</label>
           <input
             className='form-input'
@@ -62,7 +64,7 @@ const FormSignup = ({ submitForm }) => {
             onChange={handleChange}
           />
           {errors.password2 && <p>{errors.password2}</p>}
-        </div>
+        </div> */}
         <button className='form-input-btn' type='submit'>
           Sign up
         </button>

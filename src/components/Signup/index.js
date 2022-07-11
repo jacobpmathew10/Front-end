@@ -15,7 +15,7 @@ export const Signup  = ({lightBg,id,imgStart,topline,lightText,headline,img,desc
                     <Heading lightText={lightText}>{headline}</Heading>
                     <Subtitle darkText={darkText}>{description}</Subtitle>
                     <BtnWrap>
-                    <Button onClick={()=>{navigate('/signup');}} smooth={true} duration={500} spy={true} exact="true" offset={-80} primary={primary ? 1 : 0} dark={ dark ? 1 : 0 } dark2={dark2 ? 1 : 0}>{buttonlabel}</Button>
+                    <Button onClick={()=>{navigate('/signin');}} smooth={true} duration={500} spy={true} exact="true" offset={-80} primary={primary ? 1 : 0} dark={ dark ? 1 : 0 } dark2={dark2 ? 1 : 0}>{buttonlabel}</Button>
                 </BtnWrap>
                 </TextWrapper>
                 </Column1>    

@@ -1,26 +1,41 @@
 import React from 'react'
-import { FormButton, FormInput, FormLabel,FormH1,FormContent,Container,FormWrap,Form } from './SiginElements'
 import './signin.css'
-const SignIn = () => {
+
+const SignIn = (props) => {
+const{setEmail,email,Password,setPassword,handleLogin,handleSignup,hasAccount,setHasAccount,emailError,passwordError}=props;
   return( <>
-  <Container>
-    <FormWrap>
-        <a href="/" className='navlink'>Digi Forecast</a>
-        <FormContent>
-            <Form action='#'>
-                <FormH1>Sign in to your account</FormH1>
-                <FormLabel htmlFor='for'>Email</FormLabel>
-                <FormInput type="email" required/>
-                <FormLabel htmlFor="for">Password</FormLabel>
-                <FormInput type='password' required/>
-                <FormButton type='submit' onClick="">Sign In</FormButton>
-            </Form>
-        </FormContent>
-    </FormWrap>
-  </Container>
-  
+            <section className='login'>
+              <div className='loginContainer'>
+                <label>Email</label>
+                <input type='email' autofocus required onChange={(e)=>setEmail(e.target.value)} value={email}/>
+             <p className='errorMsg'>{emailError}</p>
+             <label>password</label>
+             <input type='password' required
+              onChange={(e)=>{
+                setPassword(e.target.value);
+              }}
+              value={Password} />
+             <p className='errorMsg'>{passwordError}</p>
+                <div className='btnContainer'>
+                  {hasAccount ?(
+                    <>
+                    <button onClick={handleLogin}>Sign in</button>
+                    <p>
+                        Dont have an account?
+                        <span onClick={()=>setHasAccount(!hasAccount)}>Sign up</span>
+                    </p>
+                    </>
+                  ):(
+                    <>
+                  <button onClick={handleSignup}>Sign up</button>
+                 
+                  <p>have an account? <span onClick={()=>setHasAccount(!hasAccount)}>Sign in</span>  </p>
+                  </>)
+                  }
+                </div>
+                </div>
+                </section>
   </>
   )
 }
-
 export default SignIn;

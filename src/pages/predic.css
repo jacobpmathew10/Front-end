@@ -1,3 +1,16 @@
+.welcome {
+  text-align: center;
+  margin: auto;
+  color:#000;
+  
+}
+
+.logo {
+  text-align: left;
+  color:#000;
+
+}
+
 .hero {
     width: 100%;
     min-height: 100vh;
@@ -11,11 +24,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: radial-gradient(#e66465, #9198e5);
   }
-  
-  .hero nav h2 {
-    color: #fff;
-  }
+
   
   .hero nav button {
     width: 86px;
@@ -24,15 +35,17 @@
   }
   .button {
     display: block;
-    width: 115px;
-    height: 45px;
-    background: #4E9CAF;
+    width: 150px;
+    height: 50px;
+    background: #809fff;
     padding: 10px;
     text-align: center;
     border-radius: 5px;
     color: white;
     font-weight: bold;
-    line-height: 25px;
+    line-height: 28px;
     text-decoration: none;
+    z-index: 5;
+    font-size: 25px;
 }
   

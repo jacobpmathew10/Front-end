@@ -5,7 +5,7 @@ export const homeObjone={
     lightTextDesc:false,
     topline:" ",
     headline:'Keep track of leads automatically',
-    description:'fore C sales  keeps track of all the sales made by the client',
+    description:'DigiForecast  keeps track of all the sales made by the client',
     buttonlabel:'Get Started',
     imgStart:false,
     img:require('../../images/image1.svg'),
